@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
 @import "tailwindcss";
 
 @plugin '@tailwindcss/typography';
@@ -8,6 +9,7 @@
 }
 
 @theme {
+  --font-instrument: "Instrument Sans", sans-serif;
   /* Her tilføjes theme variable // tokens */
 }
 

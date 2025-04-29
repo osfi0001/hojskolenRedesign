@@ -6,10 +6,7 @@ import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 ---
 <MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+	<div class="flex items-center justify-center"><h1 class="p-6 text-left text-white text-[64px] font-bold font-instrument leading-[80%] tracking-[-6%]">HØJSKOLE<br>I UD<span class="text-[#59BA41]">LANDET</span></h1></div>
+	<div class="flex items-center justify-center"><img src="tentimage.svg" alt="image of a tent"></div>
+	<h3 class="flex items-center justify-center text-[24px] text-black font-instrument p-6">ER DU KLAR TIL DIT LIVS EVENTYR?</h3>
 </MainLayout>
