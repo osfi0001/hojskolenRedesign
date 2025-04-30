@@ -9,7 +9,7 @@ import Values from "../components/Values.astro";
 import Info from "../components/Info.astro";
 ---
 <MainLayout title="Titel">
-	<div class="z-[1]">
+	<div class="z-[1] relative">
 		<div class="flex items-center justify-center"><h1 class="p-6 md:p-4 text-left text-white text-[72px] md:text-[250px] font-bold font-instrument leading-[80%] tracking-[-6%]">HØJSKOLE<br>I UD<span class="text-[#59BA41]">LANDET</span></h1></div>
 		<div class="md:grid md:grid-cols-2">
 			<div class="md:order-[3] px-6 md:pl-35 w-full"><img class="rounded-3xl" src="tentimage.svg" alt="image of a tent"></div>
@@ -21,12 +21,12 @@ import Info from "../components/Info.astro";
 					<h3 class="flex items-center justify-center md:justify-start md:items-start text-[24px] text-black font-instrument font-bold p-6 md:px-44 md:pt-16">ER DU KLAR TIL DIT LIVS EVENTYR?</h3>
 					<p class="px-6 md:px-44 text-black font-instrument font-regular">HÖJSKOLENDK  brænder for oplevelser, fællesskab og mødet med nye mennesker og  kulturer; derfor laver vi eventyrlige højskoleophold i udlandet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
 				</div>
-				<div class="flex items-center justify-center pb-16"><Button></Button></div>
+				<div class="flex items-center justify-center pb-13"><Button></Button></div>
 			</div>
 		</div>
+		<img class="w-full absolute -bottom-1 z-[-1] overflow-hidden" src="treesbg.svg" alt="treessvg">
 	</div>
-	<div class="relative z-[0] bg-[#16250D] mt-16">
-		<!-- <img class="w-full absolute -top-40 z-[-1] overflow-hidden" src="treesbg.svg" alt="treessvg"> -->
+	<div class="relative z-[0] bg-[#16250D] pt-16">
 		 <div class="flex items-center justify-center"><h3 class="hidden md:block text-[48px] font-bold px-8 pt-16 text-white">Hvilken livsændrende oplevelser kan vi byde på?</h3></div>
 		<div class="flex flex-col gap-8 items-center justify-center pt-16 px-6 md:flex-row md:gap-12 md:items-stretch md:justify-between md:px-12 lg:px-24">
 			<div class="md:flex-1">
@@ -52,42 +52,42 @@ import Info from "../components/Info.astro";
 				cardtext3="Brasilien, Bolivia, Colombia, Ecuador, Peru & Argentina"></Cardmain>
 			</div>
 		</div>
-		<div class="md:m-24">
+		<div class="md:mx-50 md:mt-16 md:pb-8">
 			<h3 class="flex items-center justify-center text-white font-bold font-instrument text-[24px] md:text-[48px] tracking-[6%] py-12">En rejse højskole fyldt med oplevelser</h3>
-			<p class="px-6 pb-8 text-white font-instrument font-regular text-[16px] tracking-[6%]">Drømmer du om at rejse på højskole i udlandet for unge? Når du rejser med HÖJSKOLENDK, får du dit livs eventyr og vi garanterer dig masser af fællesskab, fantastiske oplevelser og meningsfuld læring. Et højskoleophold i udlandet er noget, du bare skal prøve mindst én gang i dit liv – du vil aldrig fortryde, at du tog afsted. Og du kan glæde dig til nye venskaber og oplevelser for livet.</p>
-			<p class="px-6 pb-8 text-white font-instrument font-regular text-[16px] tracking-[6%]">Vil du gerne på højskole i udlandet, tilbyder vi de mest attraktive højskoleophold i udlandet, hvor du besøger flere skønne og spændende lande og deltage i spændende og inspirerende undervisning og alverdens fede aktiviteter.</p>
-			<p class="px-6 pb-8 text-white font-instrument font-bold text-[16px] tracking-[6%]">Din højskole rejse kan blandt andet indeholde:</p>
+			<p class="px-6 pb-8 text-white font-instrument font-regular text-[18px] tracking-[6%]">Drømmer du om at rejse på højskole i udlandet for unge? Når du rejser med HÖJSKOLENDK, får du dit livs eventyr og vi garanterer dig masser af fællesskab, fantastiske oplevelser og meningsfuld læring. Et højskoleophold i udlandet er noget, du bare skal prøve mindst én gang i dit liv – du vil aldrig fortryde, at du tog afsted. Og du kan glæde dig til nye venskaber og oplevelser for livet.</p>
+			<p class="px-6 pb-8 text-white font-instrument font-regular text-[18px] tracking-[6%]">Vil du gerne på højskole i udlandet, tilbyder vi de mest attraktive højskoleophold i udlandet, hvor du besøger flere skønne og spændende lande og deltage i spændende og inspirerende undervisning og alverdens fede aktiviteter.</p>
+			<p class="px-6 pb-8 text-white font-instrument font-bold text-[18px] tracking-[6%]">Din højskole rejse kan blandt andet indeholde:</p>
 		</div>
 	</div>
-	<div class="bg-[#59BA41]">
+	<div class="bg-[#59BA41] md:px-50">
 		<Values
 		valuetitle="Teambuilding"
 		valueimage="global.svg"
 		valueimagealt="globe image"
 		valuep="Hvorfor tage på et kedeligt kursus i Danmark, når du kan rejse ud i verden og udvikle dig samtidig? Du rejser sammen med andre unge voksne og lærer en hel masse om samarbejde, relationer, fællesskab, konflikter, styrker og stærke teams. Du får ikke blot rejse-erfaring på cv’et, men også et væld af brugbare redskaber til studie eller karriere."></Values>
 	</div>
-	<div class="bg-[#ADDE92]">
+	<div class="bg-[#ADDE92] md:px-50">
 		<Values
 		valuetitle="Frivilligt arbejde & Kulturforståelse"
 		valueimage="lovely.svg"
 		valueimagealt="heart image"
 		valuep="Drømmer du om at lave frivilligt arbejde og gøre en forskel i et andet land? Mange af vores højskole rejser inkluderer frivilligt arbejde, hvor vi kommer helt tæt på de lokale. Det giver dig en unik indsigt i landet, større forståelse for kulturen og måden man lever på i de forskellige lande."></Values>
 	</div>
-	<div class="bg-[#59BA41]">
+	<div class="bg-[#59BA41] md:px-50">
 		<Values
 		valuetitle="Friuger - et væld af muligheder"
 		valueimage="global.svg"
 		valueimagealt="globe image"
 		valuep="Efter spændende og lærerige undervisningsforløb, har vi – alt efter hvilken højskole rejse du vælger – lagt én eller flere friuger ind. Her har I mulighed for selv at tage styringen og udforske dét land, kontinent eller ø-rige vi befinder os i. Friugerne bliver brugt på forskellig vis og oftest deler holdet sig op i lidt mindre grupper for at tage på eventyr – andre gange rejser hele holdet sammen på en fed friuge."></Values>
 	</div>
-	<div class="bg-[#ADDE92]">
+	<div class="bg-[#ADDE92] md:px-50">
 		<Values
 		valuetitle="Spændende kulturoplevelser"
 		valueimage="sign.svg"
 		valueimagealt="sign image"
 		valuep="Kulturen er vigtig at opleve, når man befinder sig i et nyt land. Det giver dig både nogle rigtigt spændende oplevelser og menneske-møder, men også en unik indsigt, du ikke kan læse dig til i en bog eller se i et rejseprogram. På vores højskole ture kan du opleve alt fra ældgamle Hindu-templer i Indien, surf-kulturen på Hawaii, Mayaindianerne i Guatemala, de gamle inkaruiner i Mexico, buddhisme i Thailand, te-plantager i Sri Lanka og kakao-farme i Costa Rica."></Values>
 	</div>
-	<div class="bg-[#59BA41]">
+	<div class="bg-[#59BA41] md:px-50">
 		<Values
 		valuetitle="Vilde naturoplevelser"
 		valueimage="travel.svg"
