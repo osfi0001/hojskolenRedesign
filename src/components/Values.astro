@@ -1,0 +1,8 @@
+---
+const {valueimage="", valueimagealt="", valuep="", valuetitle=""} = Astro.props;
+---
+<div class="flex flex-col items-center justify-center p-8">
+    <img class="w-[50px] py-4" src={valueimage} alt={valueimagealt}>
+    <h3 class="py-2 text-[24px] font-bold font-instrument leading-[200%] text-[#16250D]">{valuetitle}</h3>
+    <p class="text-[#16250D] py-2 leading-[200%]">{valuep}</p>
+</div>
